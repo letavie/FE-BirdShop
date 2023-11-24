@@ -1,0 +1,100 @@
+.navbar {
+    height: 50px;
+    border-bottom: 0.5px solid rgb(209, 204, 204);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        .search {
+            display: flex;
+            align-items: center;
+            border: 0.5px solid rgb(159, 158, 158);
+            border-radius: 10px;
+            padding: 3px;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                width: 25em;
+                &::placeholder {
+                    font-size: 13px;
+                    padding-left: 8px;
+                }
+            }
+        }
+        .user-items {
+            display: flex;
+            align-items: center;
+            margin: 0px 30px;
+            gap: 10px;
+            position: relative;
+            .user-item {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+                .icon {
+                    cursor: pointer;
+
+                    font-size: 25px;
+                }
+                &:hover {
+                    color: rgb(99, 102, 241);
+                }
+            }
+            .user-item2 {
+                .icon {
+                    cursor: pointer;
+                    font-size: 25px;
+                }
+                &:hover {
+                    color: rgb(99, 102, 241);
+                    .logo {
+                        width: 120px;
+                        height: 84px;
+                        right: 0px;
+                        background: #ffffff;
+                        border-radius: 5px 0 5px 5px;
+
+                        border: 1px solid rgb(57, 57, 71);
+                    }
+                }
+                &:hover .logo {
+                    display: block;
+                }
+                .logo {
+                    position: absolute;
+                    display: none;
+
+                    .info,
+                    .log-out {
+                        width: 100%;
+                        height: 42px;
+                        color: #231f20;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding-right: 10px;
+                        transition: background-color 0.4s, color 0.2s;
+                    }
+                }
+            }
+
+            .info:hover,
+            .log-out:hover {
+                border-radius: 5px 0 5px 5px;
+                background-color: rgb(99, 102, 241);
+                color: var(--primary-color);
+            }
+        }
+    }
+}
