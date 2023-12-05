@@ -73,6 +73,8 @@ function ProductList() {
         2: 'Metal',
         // Thêm các mục ánh xạ khác
     };
+    //validate
+
     const columns = [
         { field: 'id', headerName: 'ID', width: 100 },
         { field: 'name', headerName: 'Name Products', width: 250 },

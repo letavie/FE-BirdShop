@@ -18,6 +18,7 @@ import CustomerList from '../pages/Admin/CustomerList/CustomerList';
 import { Comment } from '../pages/Admin/Comment/Comment';
 import { AdminInfor } from '../pages/Admin/AdminInfo/AdminInfo';
 import { CustomerDetail } from '../pages/Admin/CustomerDetail/CustomerDetail';
+
 const role = localStorage.getItem('role');
 const publicRoute = [
     { path: '/', component: Home, layout: DefaultLayout },
